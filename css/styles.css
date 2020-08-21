@@ -818,3 +818,44 @@ button.close:focus .close-icon {
 .center-button {
   text-align: center;
 }
+
+.policy-label {
+  display: flex;
+   justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+.check-ikon {
+  display: inline-block;
+  width: 16px;
+  height: 15px;
+  margin-right: 7px;
+  border: 2px solid rgb(21, 21, 21);
+  border-radius: 2px;
+  transition: background-color var(--transition-duration) cubic-bezier(0.4, 0, 0.2, 1);
+  
+}
+
+.checkbox-policy {
+-webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.policy {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.714;
+  letter-spacing: 0.03em;
+}
+
+.checkbox-policy:checked + .ckeck-ikon {
+  border-color: var(--accent-color);
+  background-color: var(--accent-color);
+
+  background-size: contain;
+  background-origin: border-box;
+
+}
