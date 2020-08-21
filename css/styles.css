@@ -658,8 +658,9 @@ img {
   margin-right: 8px;
 }
 
-/* Модальне вікно */
+/* Модальне вікно ----------------------*/
 .backdrop {
+  
   position: fixed;
   top: 0;
   left: 0;
@@ -708,6 +709,7 @@ button.close:focus .close-icon {
 }
 
 .modal {
+  padding: 40px;
   position: absolute;
   width: 528px;
   height: 581px;
@@ -719,4 +721,100 @@ button.close:focus .close-icon {
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   transition: transform var(--transition-duration) cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.form {
+  position: relative;
+  display: block;
+  margin-bottom: 10px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.167;
+  letter-spacing: 0.01em;
+}
+
+.modal-text {
+  display: block;
+  margin-bottom: 30px;
+  text-align: center;
+
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.15;  
+  letter-spacing: 0.03em;
+  color: var(--black-color);
+
+
+}
+
+.form-box {
+  
+  position: relative;
+  margin-top: 4px;
+
+}
+
+.form-label {
+  margin-bottom: 10px;
+  display: block;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.167;
+  letter-spacing: 0.01em;
+}
+
+.form-input,
+.comment {
+  padding-left: 42px;
+  width: 100%;
+  height: 40px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  outline: none;
+}
+
+.form-input:focus,
+.comment:focus {
+  outline: none;
+  border-color: var(--accent-color);
+}
+
+.form-icon {
+  position: absolute;
+  top: 50%;
+  left: 12px;
+  transform: translateY(-50%);
+}
+
+.comment {
+  resize: none;
+  width: 100%;
+  height: 120px;
+  margin-top: 4px;
+  padding: 12px 16px;
+}
+
+::placeholder {
+  color: rgba(117, 117, 117, 0.5);
+}
+
+.button-form {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.875;
+  display: inline-block;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: var(--white-color);
+  background: var(--accent-color);
+  border: 1px solid transparent;
+  border-radius: 4px;
+  min-width: 200px;
+  padding: 10px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  }
+
+.center-button {
+  text-align: center;
 }
