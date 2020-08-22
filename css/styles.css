@@ -345,7 +345,9 @@ body {
   display: block;
   margin-bottom: 20px;
   font-weight: bold;
+  font-size: 14px;
   line-height: 1.143;
+  letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--white-color);
 }
@@ -517,13 +519,82 @@ body {
 .footer-box {
   display: flex;
   justify-content: space-between;
+  align-items: baseline;
   padding-top: 60px;
   padding-bottom: 60px;
 }
 
-.footer-item {
+/* ============================================== */
+
+.footer-subscribe {
   /* width: calc((100% - 30px * 2) / 3); */
 }
+
+.footer-subscribe-form {
+
+}
+
+.footer-subscribe-input {
+  width: 358px;
+  height: 50px;
+  padding-left: 16px;
+  margin-right: 12px;
+  border: 1px solid rgba(
+      255,
+      255,
+      255,
+      0.3
+    );
+  
+  box-shadow: (0px 4px 4px rgba(
+        0,
+        0,
+        0,
+        0.15
+      ));
+
+  border-radius: 4px;
+  background-color: inherit;
+  transition: border-color var(--transition-duration) 
+    cubic-bezier(0.4, 0, 0.2, 1);
+
+} 
+
+.footer-subscribe-input:focus {
+  outline: none;
+  color: var(--white-color);
+  border-color: var(--white-color);
+}
+
+
+
+.footer-subscribe-button {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.875;
+  display: inline-flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: var(--white-color);
+  background: var(--accent-color);
+  border: 1px solid transparent;
+  border-radius: 4px;
+  min-width: 200px;
+  padding: 10px 32px;
+  transition: background-color var(--transition-duration) cubic-bezier(0.4, 0, 0.2, 1),
+    color var(--transition-duration) cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer-subscribe-button::after {
+  content: "";
+  display: inline-block;
+  margin-left: 10px;
+  width: 24px;
+  height: 24px;
+  background-image: url(../images/icon-send.svg);
+}
+ 
 
 .address-list {
   font-style: normal;
@@ -779,6 +850,12 @@ button.close:focus .close-icon {
   border-color: var(--accent-color);
 }
 
+.form-input:focus + .form-icon {
+  fill: var(--accent-color);
+}
+
+
+
 .form-icon {
   position: absolute;
   top: 50%;
@@ -827,7 +904,7 @@ button.close:focus .close-icon {
   margin-bottom: 30px;
 }
 
-.check-ikon {
+.check-icon {
   display: inline-block;
   width: 16px;
   height: 15px;
@@ -851,10 +928,10 @@ button.close:focus .close-icon {
   letter-spacing: 0.03em;
 }
 
-.checkbox-policy:checked + .ckeck-ikon {
+.checkbox-policy:checked + .check-icon {
   border-color: var(--accent-color);
   background-color: var(--accent-color);
-
+  background-image: url(../images/icon-check.svg);
   background-size: contain;
   background-origin: border-box;
 

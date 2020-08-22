@@ -600,10 +600,14 @@
           </ul>
         </div>
         <!-- Секція футера 3 -->
-        <div class="footer-item">
+        <div class="footer-subscribe">
           <b class="b-footer">подпишитесь на рассылку</b>
-          <input type="email" name="login" value="E-mail" />
-          <button class="button-main">Подписаться</button>
+          <form class="footer-subscribe-form" action="#">
+            <input 
+              class="footer-subscribe-input" 
+              type="email" name="email-subscribe" placeholder="E-mail" />
+            <button class="footer-subscribe-button">Подписаться</button>
+          </form>
         </div>
       </div>
     </footer>
@@ -617,31 +621,41 @@
         </button>
         <b class="modal-text">Оставьте свои данные, мы вам перезвоним</b>
         <form class="form" action="#" method="POST">
-            <label class="form-label" for="name">Имя 
+            <label class="form-label">Имя 
               <div class="form-box">
               <input class="form-input" type="text" name="user-name"> 
+              <svg class="form-icon" width="18" height="18">
+                <use href="./images/sprite-2.svg#icon-person"></use>
+              </svg>
               </div>
             </label>
-            <label class="form-label" for="name">Телефон
+            <label class="form-label">Телефон
               <div class="form-box">
               <input class="form-input" type="tel" name="user-phone"> 
+              <svg class="form-icon" width="18" height="18">
+                <use href="./images/sprite-2.svg#icon-phone"></use>
+              </svg>
               </div>
             </label>
-            <label class="form-label" for="name">Почта
+            <label class="form-label">Почта
               <div class="form-box">
               <input class="form-input" type="email" name="user-email"> 
+              <svg class="form-icon" width="18" height="18">
+                <use href="./images/sprite-2.svg#icon-email"></use>
+              </svg>
               </div>
             </label>
-            <label class="form-label" for="name">Комментарий              
-              <textarea class="comment" name="comments" placeholder="Введите текст"></textarea>      
+            <label class="form-label">Комментарий              
+              <textarea class="comment" name="comment" placeholder="Введите текст"></textarea>      
             </label>
 
             <!-- Прийняття умов -->
 
             <label class="policy-label">
               <input type="checkbox" name="policy" class="checkbox-policy" />
-              <span class="check-ikon"></span>
-              <span class="policy">Соглашаюсь с рассылкой и принимаю <a href="#">Условия договора</a></span>
+              <span class="check-icon"></span>
+              <span class="policy">Соглашаюсь с рассылкой и принимаю 
+                <a href="#">Условия договора</a></span>
               
 
             </label>
@@ -651,20 +665,6 @@
             <div class="center-button">
               <button class="button-form" type="submit">Отправить</button>
             </div>
-
-
-
-
-
-
-
-          
-
-
-          
-
-
-
         </form>
       </div>
     </div>
